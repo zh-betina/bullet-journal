@@ -1,0 +1,17 @@
+.sidebar{
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    height: 99vh;
+    overflow-y: scroll;
+    z-index: 3;
+    width: 30vw;
+    background-color: #f4f9f9;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: .8rem;
+}

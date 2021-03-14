@@ -1,5 +1,8 @@
+import Link from 'next/link'
+
 import Head from 'next/head'
 import Layout from "../components/layout";
+
 import main from "./index.module.css";
 
 export default function Home() {
@@ -14,11 +17,13 @@ export default function Home() {
           <h1 className={main.title}>Your Personal Bullet Journal</h1>
           <p className="txtPrimary txt--middle">Please, note, for now only DEMO subpage is available for view.</p>
           <div className="flexRow">
-            <button className={main.mainBtn}>Demo</button>
-            <button className={main.mainBtn}>Create your account</button>
-            <button className={main.mainBtn}>Sign in</button>
+            <Link href="/entries/new-entry">
+              <button className="mainBtn">Demo</button>
+            </Link>
+            <button className="mainBtn">Create your account</button>
+            <button className="mainBtn">Sign in</button>
           </div>
-          <footer className={main.footer}><a href='https://www.freepik.com/vectors/calendar'>Calendar vector created by pikisuperstar - www.freepik.com</a></footer>
+          <footer className={main.footer}><div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div></footer>
         </main>
       </div>
     </Layout>
